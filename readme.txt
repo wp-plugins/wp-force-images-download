@@ -14,8 +14,7 @@ Note:The post must have featured image becuase this plugin generates download li
 
 <h2>HOW TO USE:</h2><br>
 1-WITH TEMPLATE TAG<br>
-Just put the template tag in single.php file where you want to appear the download button.Put this line of code in your single.php.
-Usage:<br>
+Just put the template tag in single.php file where you want to appear the download button.Put this line of code in your single.php.<br>
 Three ways to implement..<br>
 1).  <?php wp_fid();?> simple with default settings.<br>
 2).  <?php wp_fid("Some Text");?> custom text to appear on download button<br>
