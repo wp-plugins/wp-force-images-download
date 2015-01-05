@@ -45,7 +45,4 @@ shortcode support
 
 1.0.0
 basic release
-#plugin-title {
-  background-image: url(http://plugins.svn.wordpress.org/wp-force-images-download/assets/wp-force-images-download-772x250.jpg);
-}
 
