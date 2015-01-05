@@ -20,7 +20,7 @@ Three ways to implement..<br>
 2).  wp_fid("Some Text"); custom text to appear on download button<br>
 3).  wp_fid("Some Text","green"); custom text also with custom color<br>
 Second function allows you to set custom text for download button.e.g. wp_fid("Image Download");
-The default is [Download].<br>
+The default is [Download] and default color is 'grey'.<br>
 Note:If Featured Image is not set for post the download button do not appear on page.<br>
 
 2-WITH SHORTCODE<br>
