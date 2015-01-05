@@ -25,3 +25,7 @@ Upload the WP-Force Images Download plugin to your blog, Activate it, and you're
 
 You have to put this code in single-{post} file.<br>
 <b>wp_fid();</b>
+
+#plugin-title {
+  background-image: url(http://example.com/path/to/where/banner/can/be/found/your-banner-772x250.png);
+}
