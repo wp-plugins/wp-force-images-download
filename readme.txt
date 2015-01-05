@@ -8,7 +8,7 @@ A simple plugin that force the download of images or pictures such as jpeg,png e
 
 == Description ==
 
-A simple plugin that force the download of images or pictures such as jpeg,png etc. 
+A simple plugin that force the download of images or pictures such as jpeg,png etc. <br>
 This plugin is very useful to those who want to download post attachment or featured image. Just put the template tag in single.php and this plugin automatically generates the download link for every post.
 Note:The post must have featured image becuase this plugin generates download link of attached featured image of every post.
 
