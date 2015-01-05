@@ -16,9 +16,9 @@ Note:The post must have featured image becuase this plugin generates download li
 1-WITH TEMPLATE TAG<br>
 Just put the template tag in single.php file where you want to appear the download button.Put this line of code in your single.php.<br>
 Three ways to implement..<br>
-1).  <?php wp_fid();?> simple with default settings.<br>
-2).  <?php wp_fid("Some Text");?> custom text to appear on download button<br>
-3).  <?php wp_fid("Some Text","green");?> custom text also with custom color<br>
+1).  wp_fid(); simple with default settings.<br>
+2).  wp_fid("Some Text"); custom text to appear on download button<br>
+3).  wp_fid("Some Text","green"); custom text also with custom color<br>
 Second function allows you to set custom text for download button.e.g. wp_fid("Image Download");
 The default is [Download].<br>
 Note:If Featured Image is not set for post the download button do not appear on page.<br>
