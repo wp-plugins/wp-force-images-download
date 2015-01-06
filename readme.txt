@@ -13,7 +13,7 @@ This plugin is very useful to those who want to download post attachment or feat
 <strong>Note:</strong>The post must have featured image because this plugin generates download link of attached featured image of every post , if the post(s) have not featured image the download button would not appear.<br>
 
 <strong>HOW TO USE:</strong><br>
-You can use this plugin in two ways i.e. by using template tag or by using shortcode.
+You can use this plugin in two ways i.e. by using template tag or by using shortcode.<br>
 <strong>1-By Using Template Tag</strong><br>
 You have to put the template tag in your single.php file of your theme, where you want to appear the download button.<br>
 There are three ways to use template tag..<br>
