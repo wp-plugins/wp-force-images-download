@@ -20,9 +20,9 @@ There are three ways to use template tag..<br>
 1).  `<?php wp_fid();?>` This is simple form with default settings.<br>
 2).  `<?php wp_fid("Some Text");?>` This will allow you to set custom text to appear on download button. Default is "Download"<br>
 3).  `<?php wp_fid("Some Text","green");?>` This will allow you to set custom text along with with custom color. Default color is "grey"<br>
-Second function allows you to set custom text for download button.e.g. wp_fid("Image Download");
-For more details you can ask question in support section.
-The default is [Download] and default color is 'grey'.<br>
+Second function allows you to set custom text for download button.e.g.<br> `<?php wp_fid("Image Download");?>`<br>
+For more details you can ask question in support section.<br>
+The default color is [Download] and default color is 'grey'.<br>
 <strong>Note:</strong>If Featured Image is not set for post the download button do not appear on page.<br>
 
 <strong>2-By Using SHORTCODE</strong><br>
