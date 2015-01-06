@@ -1,7 +1,7 @@
 === WP-Force Images Download === 
 Tags: image, download, force, browser force, free, pictures, post thumbnail
-Tested up to: 4.0
-Version : 1.1.0
+Tested up to: 4.1
+Version : 1.1.1
 License: GPLv2
 
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
@@ -38,6 +38,10 @@ You have to put this code in single-{post} file.<br>
 == FAQ ==
 No questions yet
 == Changelog ==
+<b>1.1.1</b><br>
+little issues solved
+styling issues solved
+
 <b>1.1.0</b><br>
 styling and colors
 shortcode support
