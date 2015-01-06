@@ -42,7 +42,8 @@ or use shortcode.<br>
 == FAQ ==
 No questions yet
 == Screenshots ==
-1-Buttons in Different Colors
+Buttons in different colors
+
 == Changelog ==
 <strong>1.1.1</strong><br>
 little issues solved
