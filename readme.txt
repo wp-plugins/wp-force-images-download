@@ -8,33 +8,37 @@ A simple plugin that force the download of images or pictures such as jpeg,png e
 
 == Description ==
 
-A simple plugin that force the download of images or pictures such as jpeg,png etc. 
+This is a simple plugin that allows you to force the download of images or pictures such as jpeg,png etc. <br>
 This plugin is very useful to those who want to download post attachment or featured image. Just put the template tag in single.php and this plugin automatically generates the download link for every post.
-Note:The post must have featured image becuase this plugin generates download link of attached featured image of every post.
+Note:The post must have featured image because this plugin generates download link of attached featured image of every post , if the post(s) have not featured image the download button would not appear .
 
-<h2>HOW TO USE:</h2><br>
-1-WITH TEMPLATE TAG<br>
-Just put the template tag in single.php file where you want to appear the download button.Put this line of code in your single.php.<br>
-Three ways to implement..<br>
-1).  wp_fid(); simple with default settings.<br>
-2).  wp_fid("Some Text"); custom text to appear on download button<br>
-3).  wp_fid("Some Text","green"); custom text also with custom color<br>
+<strong>HOW TO USE:</strong><br>
+You can use this plugin in two ways i.e. by using template tag or by using shortcode.
+1-By Using Template Tag<br>
+You have to put the template tag in your single.php file of your theme, where you want to appear the download button.<br>
+There are three ways to use template tag..<br>
+1).  wp_fid(); This is simple form with default settings.<br>
+2).  wp_fid("Some Text"); This will allow you to set custom text to appear on download button. Default is "Download"<br>
+3).  wp_fid("Some Text","green"); This will allow you to set custom text along with with custom color. Default color is "grey"<br>
 Second function allows you to set custom text for download button.e.g. wp_fid("Image Download");
+For more details you can ask question in support section.
 The default is [Download] and default color is 'grey'.<br>
 Note:If Featured Image is not set for post the download button do not appear on page.<br>
 
-2-WITH SHORTCODE<br>
-Now you can use shortcode.<br>
-Three ways to implement..<br>
-1).  [wpfid] simple with default settings.<br>
-2).  [wpfid title="some text"] custom text to appear on download button<br>
-3).  [wpfid title="some text" color="green"] custom text also with custom color<br>
+2-By Using SHORTCODE<br>
+You have to put shortcode in the post content, while writing post.<br>
+There are also three ways to use SHORTCODE..<br>
+1).  [wpfid] This is simple form with default settings.<br>
+2).  [wpfid title="some text"] This will allow you to set custom text to appear on download button. Default is "Download"<br>
+3).  [wpfid title="some text" color="green"] This will allow you to set custom text along with with custom color. Default color is "grey"<br>
 == Installation ==
 
-Upload the WP-Force Images Download plugin to your blog, Activate it, and you're done!
+Upload the <strong>WP-Force Images Download</strong> plugin to your blog, Activate it, and you're done!
 
-You have to put this code in single-{post} file.<br>
-<b>wp_fid();</b>
+You have to put this code in theme file.<br>
+<b>`wp_fid();`</b><br>
+or use shortcode.<br>
+`[wpfid]`
 == FAQ ==
 No questions yet
 == Changelog ==
