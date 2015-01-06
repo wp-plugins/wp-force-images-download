@@ -41,6 +41,8 @@ or use shortcode.<br>
 `[wpfid]`
 == FAQ ==
 No questions yet
+== Screenshots ==
+
 == Changelog ==
 <strong>1.1.1</strong><br>
 little issues solved
