@@ -42,7 +42,7 @@ or use shortcode.<br>
 == FAQ ==
 No questions yet
 == Screenshots ==
-
+1-Buttons in Different Colors
 == Changelog ==
 <strong>1.1.1</strong><br>
 little issues solved
