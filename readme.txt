@@ -1,5 +1,5 @@
 === WP-Force Images Download === 
-Tags: image, download, force, browser force, free, pictures, post thumbnail
+Tags: image, download, force, browser force, free, pictures, post thumbnail,featured-image,download-images,force,download link,generate,button,shortcode buton
 Tested up to: 4.1
 Version : 1.1.1
 License: GPLv2
@@ -9,8 +9,8 @@ A simple plugin that force the download of images or pictures such as jpeg,png e
 == Description ==
 
 This is a simple plugin that allows you to force the download of images or pictures such as jpeg,png etc. <br>
-This plugin is very useful to those who want to download post attachment or featured image. Just put the template tag in single.php and this plugin automatically generates the download link for every post.
-<strong>Note:</strong>The post must have featured image because this plugin generates download link of attached featured image of every post , if the post(s) have not featured image the download button would not appear .
+This plugin is very useful to those who want to download post attachment or featured image. Just put the template tag in single.php and this plugin automatically generates the download link for every post.<br>
+<strong>Note:</strong>The post must have featured image because this plugin generates download link of attached featured image of every post , if the post(s) have not featured image the download button would not appear.<br>
 
 <strong>HOW TO USE:</strong><br>
 You can use this plugin in two ways i.e. by using template tag or by using shortcode.
@@ -46,7 +46,7 @@ No questions yet
 little issues solved
 styling issues solved
 
-<strong>1.1.0<</strong><br>
+<strong>1.1.0</strong><br>
 styling and colors
 shortcode support
 
