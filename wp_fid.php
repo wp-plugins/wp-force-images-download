@@ -3,7 +3,7 @@
  * Plugin Name: WP-Force Images Download
  * Plugin URI: https://wordpress.org/plugins/wp-force-image-download/
  * Description: Put wp_fid(); template tag or [wpfid] shortcode where you want to appear download button. For more details see description.
- * Version: 1.1.1
+ * Version: 1.2
  * Author: Nazakat ALi
  * Author URI: https://profiles.wordpress.org/nazakatali32
  * License: GPL2
@@ -40,17 +40,20 @@ function wp_fid_short($atts){
 extract( shortcode_atts(
 		array(
 			'title' => 'Download',
-			'color' => 'grey'
+			'color' => 'grey',
+			'link' => 'post-thumb'
 		), $atts )
 	);
+if ($link == 'post-thumb' || empty($link)){
 if(has_post_thumbnail()){
 $filelink = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-$filelink = $filelink[0];
+$filelink = $filelink[0];}}else{
+$filelink = $link;
+}
 echo "<table id=\"wpfid-table\" width=\"100%\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">";
 echo "<tr><td align=\"center\"><form id=\"wpfid-form\" method=\"post\" action=\"".plugins_url('fd.php',__FILE__)."\"> <input name=\"pic_url\" type=\"hidden\" value=\"$filelink\" /><input class=\"wpfid_button\" type=\"submit\" title=\"". $title."\" value=\"".$title."\" /></form></td></tr>";
 echo "</table>";
 echo "<style>table#wpfid-table input.wpfid_button{background: none repeat scroll 0% 0% $color;}table#wpfid-table input.wpfid_button:hover{background:$color;}</style>";
-}
 }
 add_shortcode( 'wpfid' , 'wp_fid_short' );
 ?>
