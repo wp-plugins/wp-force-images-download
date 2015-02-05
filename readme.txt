@@ -9,12 +9,12 @@ License: GPLv2
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
 
 == Description ==
-= *NEW:* Now you can set your own custom download link in shortcode. = e.g.
+= NEW: Now you can set your own custom download link in shortcode. = e.g.
 `[wpfid link="http://link-to/your/image.jpg"]`
 
 This is a simple plugin that allows you to force the download of images or pictures such as jpeg,png etc.
 This plugin is very useful to those who want to download post attachment or featured image. Just put the template tag in single.php and this plugin automatically generates the download link for every post.
-= Note: =The post must have featured image because this plugin generates download link of attached featured image of every post , if the post(s) have not featured image the download button would not appear.
+= Note: =The post must have featured image because this plugin generates download link of attached featured image of every post , if the post(s) have not featured image the download button would not appear. *While using shortcode you can set your own link*
 
 = How To Use: =
 You can use this plugin in two ways i.e. by using template tag or by using shortcode.
@@ -25,7 +25,7 @@ You have to put the template tag in your single.php file of your theme, where yo
 
 1. `<?php wp_fid();?>` This is simple form with default settings.
 2. `<?php wp_fid("Some Text");?>` This will allow you to set custom text to appear on download button. Default is *Download*
-3. `<?php wp_fid("Some Text","green");?>` This will allow you to set custom text along with with custom color **(e.g. pink,green,yellow,purple,#ffcc66,#cccccc,#f80, rgb(255,56,35) etc)**. Default color is `grey`
+3. `<?php wp_fid("Some Text","green");?>` This will allow you to set custom text along with custom color **(e.g. pink,green,yellow,purple,#ffcc66,#cccccc,#f80, rgb(255,56,35) etc)**. Default color is `grey`
 
 * Second function allows you to set custom text for download button.e.g.
  `<?php wp_fid("Image Download");?>`
@@ -35,7 +35,7 @@ You have to put the template tag in your single.php file of your theme, where yo
 
 = 2-By Using Shortcode =
 You have to put shortcode in the post content, while writing post.<br>
-There are also three ways to use SHORTCODE..
+There are four ways to use SHORTCODE..
 
 1. `[wpfid]` This is simple form with default settings.
 2. `[wpfid title="some text"]` This will allow you to set custom text to appear on download button. Default is "Download"
