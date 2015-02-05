@@ -9,6 +9,8 @@ License: GPLv2
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
 
 == Description ==
+= *NEW:* Now you can set your own custom download link in shortcode. = e.g.
+`[wpfid link="http://link-to/your/image.jpg"]`
 
 This is a simple plugin that allows you to force the download of images or pictures such as jpeg,png etc.
 This plugin is very useful to those who want to download post attachment or featured image. Just put the template tag in single.php and this plugin automatically generates the download link for every post.
@@ -38,6 +40,8 @@ There are also three ways to use SHORTCODE..
 1. `[wpfid]` This is simple form with default settings.
 2. `[wpfid title="some text"]` This will allow you to set custom text to appear on download button. Default is "Download"
 3. `[wpfid title="some text" color="green"]` This will allow you to set custom text along with with custom color. Default color is "grey"
+4. `[wpfid title="some text" color="green" link="http://link-to/your/image.jpg"]` This will allow you to set *custom text*, *custom color*, and **custom download link**.
+= Note: = You can use attributes in the way you want.
 == Installation ==
 
 Upload the **WP-Force Images Download** plugin to your blog, Activate it, and you're done!
