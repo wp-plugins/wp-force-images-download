@@ -14,10 +14,10 @@ This is a simple plugin that allows you to force the download of images or pictu
 This plugin is very useful to those who want to download post attachment or featured image. Just put the template tag in single.php and this plugin automatically generates the download link for every post.<br>
 =Note:=The post must have featured image because this plugin generates download link of attached featured image of every post , if the post(s) have not featured image the download button would not appear.<br>
 
-===How To Use:===
+=How To Use:=
 You can use this plugin in two ways i.e. by using template tag or by using shortcode.
 
-===1-By Using Template Tag===
+=1-By Using Template Tag=
 You have to put the template tag in your single.php file of your theme, where you want to appear the download button.<br>
 There are three ways to use template tag..
 1.  `<?php wp_fid();?>` This is simple form with default settings.
@@ -36,7 +36,7 @@ There are also three ways to use SHORTCODE..
 3.  `[wpfid title="some text" color="green"]` This will allow you to set custom text along with with custom color. Default color is "grey"
 == Installation ==
 
-Upload the =WP-Force Images Download= plugin to your blog, Activate it, and you're done!
+Upload the WP-Force Images Download plugin to your blog, Activate it, and you're done!
 
 You have to put this code in theme file.<br>
 `<?php wp_fid();?>`<br>
