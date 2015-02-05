@@ -39,7 +39,7 @@ There are four ways to use SHORTCODE..
 
 1. `[wpfid]` This is simple form with default settings.
 2. `[wpfid title="some text"]` This will allow you to set custom text to appear on download button. Default is "Download"
-3. `[wpfid title="some text" color="green"]` This will allow you to set custom text along with with custom color. Default color is "grey"
+3. `[wpfid title="some text" color="green"]` This will allow you to set custom text along with custom color. Default color is "grey"
 4. `[wpfid title="some text" color="green" link="http://link-to/your/image.jpg"]` This will allow you to set *custom text*, *custom color*, and **custom download link**.
 = Note: = You can use attributes in the way you want.
 == Installation ==
