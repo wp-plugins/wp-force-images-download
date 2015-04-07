@@ -66,6 +66,9 @@ You can Set Custom Color in three ways:
 1. Buttons in different colors
 
 == Changelog ==
+= 1.2.1 =
+* enhancement in code
+
 = 1.2 =
 
 * added support for custom link in shortcode
