@@ -3,7 +3,7 @@
  * Plugin Name: WP-Force Images Download
  * Plugin URI: https://wordpress.org/plugins/wp-force-image-download/
  * Description: Put wp_fid(); template tag or [wpfid] shortcode where you want to appear download button. For more details see description.
- * Version: 1.2.1
+ * Version: 1.3
  * Author: Nazakat ALi
  * Author URI: https://profiles.wordpress.org/nazakatali32
  * License: GPL2

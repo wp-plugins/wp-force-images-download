@@ -1,9 +1,9 @@
 === WP-Force Images Download === 
 Tags: image, download, force, browser force, free, pictures, post thumbnail,featured-image,download-images,force,download link,generate,button,shortcode buton
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 1.2
-Version : 1.2
+Tested up to: 4.2.2
+Stable tag: 1.3
+Version : 1.3
 License: GPLv2
 
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
@@ -66,6 +66,12 @@ You can Set Custom Color in three ways:
 1. Buttons in different colors
 
 == Changelog ==
+
+= 1.3 =
+* added more image types i.e mime-types
+* security increased
+* Tested in 4.2.2
+
 = 1.2.1 =
 * enhancement in code
 
