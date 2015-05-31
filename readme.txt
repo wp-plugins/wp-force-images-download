@@ -69,7 +69,6 @@ You can Set Custom Color in three ways:
 
 
 = 1.3.1 =
-* empty image error fixed
 * minor enhancements in code
 
 = 1.3 =
