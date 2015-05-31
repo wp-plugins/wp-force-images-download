@@ -36,14 +36,6 @@ header("Content-Type: application/force-download");
 #header("Content-Type: application/download");
 #header( "Content-Length: ". filesize($file_name) );
 readfile("$file_url");
-set_time_limit(0);
-$file = @fopen($file_url,"rb");
-while(!feof($file))
-{
-	print(@fread($file, 1024*8));
-	ob_flush();
-	flush();
-}
 exit();
 //$addr = str_replace("$file_name","", $file_url);
 //if(preg_match("/([^\.]+).(jpg|png|tiff|gif|JPG|PNG|TIFF|GIF)/",$file_name,$fil))
