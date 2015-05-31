@@ -2,8 +2,8 @@
 Tags: image, download, force, browser force, free, pictures, post thumbnail,featured-image,download-images,force,download link,generate,button,shortcode buton
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.3
-Version : 1.3
+Stable tag: 1.3.1
+Version : 1.3.1
 License: GPLv2
 
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
@@ -66,6 +66,11 @@ You can Set Custom Color in three ways:
 1. Buttons in different colors
 
 == Changelog ==
+
+
+= 1.3.1 =
+* empty image error fixed
+* minor enhancements in code
 
 = 1.3 =
 * added more image types i.e mime-types
