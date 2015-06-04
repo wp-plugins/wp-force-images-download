@@ -1,5 +1,4 @@
 === WP-Force Images Download === 
-Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TNFBA9JHH6854&lc=US&item_name=Nazakat%20Ali&currency_code=USD&bn=PP%2dDonationsBF%3alogo11w%2epng%3aNonHosted
 Tags: image, download, force, browser force, free, pictures, post thumbnail,featured-image,download-images,force,download link,generate,button,shortcode buton
 Requires at least: 3.0
 Tested up to: 4.2.2
