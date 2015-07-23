@@ -12,19 +12,22 @@ A simple plugin that force the download of images or pictures such as jpeg,png e
 == Description ==
 = New Feature: =
 Now you can rename images when downloaded.There two ways to rename.
-1).Using Shortcode
+1. Using Shortcode
 `[wpfid new_name="new-name-of-file"]`
-=Note := You have to specify name only **without extension** of image file.
+= Note : = You have to specify name only **without extension** of image file.
 
-2). Bulk Rename Images
+2. Bulk Rename Images
+
 Goto settings >> **Wp-Force Images Download** page and set your desired value to rename images.
-Default value: none
-Available variables:
-* %site_name%: Replaced with the **Site Title**
+
+* Default value: none
+* Available variables:
+* %site_name%: Replaced with the ** Site Title **
 * %post_title%: Replaced with the current **Post Title**
-* %timestamp%: Replaced with the **current time** in **unix timestamp format**
-* %post_id%: Replaced with the current **Post ID**
+* %timestamp%: Replaced with the ** current time ** in **unix timestamp format**
+* %post_id%: Replaced with the current ** Post ID **
 * Note:these variables are replaced with their corresponding values.You can use only one variable at a time.
+
 If you set new name in shortcode for individual images, the name in shortcode is preferred.
 
 = Now you can set your own custom download link in shortcode. = e.g.
