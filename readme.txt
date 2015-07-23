@@ -85,6 +85,10 @@ You can Set Custom Color in three ways:
 
 == Changelog ==
 
+= 1.4 =
+* shortcode suppport to rename images individually
+* option to set bulk new name for images in options page
+* added options page in admin
 
 = 1.3.1 =
 * minor enhancements in code
