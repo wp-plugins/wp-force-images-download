@@ -1,16 +1,33 @@
 === WP-Force Images Download === 
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TNFBA9JHH6854&lc=US&item_name=Nazakat%20Ali&currency_code=USD&bn=PP%2dDonationsBF%3alogo11w%2epng%3aNonHosted
-Tags: image, download, force, browser force, free, pictures, post thumbnail,featured-image,download-images,force,download link,generate,button,shortcode buton
+Tags: image, download, force, browser force, free, pictures, post thumbnail,featured-image,download-images,force download,download link,generate,button,shortcode buton, shortcode force download, templatetag force download, pictures download button, rename images on download, on the fly rename, pictures download button
 Requires at least: 3.0
-Tested up to: 4.2.2
-Stable tag: 1.3.1
-Version : 1.3.1
+Tested up to: 4.2.3
+Stable tag: 1.4
+Version : 1.4
 License: GPLv2
 
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
 
 == Description ==
-= NEW: Now you can set your own custom download link in shortcode. = e.g.
+= New Feature: =
+Now you can rename images when downloaded.There two ways to rename.
+1).Using Shortcode
+`[wpfid new_name="new-name-of-file"]`
+=Note := You have to specify name only **without extension** of image file.
+
+2). Bulk Rename Images
+Goto settings >> **Wp-Force Images Download** page and set your desired value to rename images.
+Default value: none
+Available variables:
+* %site_name%: Replaced with the **Site Title**
+* %post_title%: Replaced with the current **Post Title**
+* %timestamp%: Replaced with the **current time** in **unix timestamp format**
+* %post_id%: Replaced with the current **Post ID**
+* Note:these variables are replaced with their corresponding values.You can use only one variable at a time.
+If you set new name in shortcode for individual images, the name in shortcode is preferred.
+
+= Now you can set your own custom download link in shortcode. = e.g.
 `[wpfid link="http://link-to/your/image.jpg"]`
 
 This is a simple plugin that allows you to force the download of images or pictures such as jpeg,png etc.
