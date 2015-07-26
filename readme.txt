@@ -1,6 +1,6 @@
 === WP-Force Images Download === 
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TNFBA9JHH6854&lc=US&item_name=Nazakat%20Ali&currency_code=USD&bn=PP%2dDonationsBF%3alogo11w%2epng%3aNonHosted
-Tags: image, download, force, browser force, free, pictures, post thumbnail,featured-image,download-images,force download,download link,generate,button,shortcode buton, shortcode force download, templatetag force download, pictures download button, rename images on download, on the fly rename, pictures download button
+Tags: image, download, force, browser force, free, pictures, post thumbnail,featured image,download images,force download,download link,generate,button,shortcode button, shortcode force download, templatetag force download, pictures download button, rename images on download, on the fly rename, pictures download button, force images download
 Requires at least: 3.0
 Tested up to: 4.2.3
 Stable tag: 1.4
@@ -10,14 +10,14 @@ License: GPLv2
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
 
 == Description ==
-= New Feature: =
+=== New Feature: ===
 Now you can rename images when downloaded.There two ways to rename.
 
-1. Using Shortcode
+= 1. Using Shortcode =
 `[wpfid new_name="new-name-of-file"]`
 = Note : = You have to specify name only **without extension** of image file.
 
-2. Bulk Rename Images
+= 2. Bulk Rename Images =
 
 Goto settings >> **Wp-Force Images Download** page and set your desired value to rename images.
 
