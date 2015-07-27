@@ -10,7 +10,7 @@ License: GPLv2
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
 
 == Description ==
-=== New Feature: ===
+= New Feature: =
 Now you can rename images when downloaded.There two ways to rename.
 
 = 1. Using Shortcode =
