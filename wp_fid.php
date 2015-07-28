@@ -5,7 +5,7 @@
  * Description: Put wp_fid(); template tag or [wpfid] shortcode where you want to appear download button. For more details see description.
  * Author: Nazakat ALi
  * Author URI: https://profiles.wordpress.org/nazakatali32
- * Version: 1.3.1
+ * Version: 1.4
  * License: GPL2
  */
  /*  Copyright 2014  Nazakat ALi  (email : nazakatali32@gmail.com)
