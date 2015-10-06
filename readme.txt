@@ -1,35 +1,40 @@
 === WP-Force Images Download === 
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TNFBA9JHH6854&lc=US&item_name=Nazakat%20Ali&currency_code=USD&bn=PP%2dDonationsBF%3alogo11w%2epng%3aNonHosted
-Tags: image, download, force, browser force, free, pictures, post thumbnail,featured image,download images,force download,download link,generate,button,shortcode button, shortcode force download, templatetag force download, pictures download button, rename images on download, on the fly rename, pictures download button, force images download
+Tags: image, download, force, browser force, free, pictures, post thumbnail,featured image,download images,force download,download link,generate,button,shortcode button, shortcode force download, templatetag force download, pictures download button, rename images on download, on the fly rename, pictures download button, force images download, generate download button
 Requires at least: 3.0
 Tested up to: 4.2.3
-Stable tag: 1.4
-Version : 1.4
+Stable tag: 1.5
+Version : 1.5
 License: GPLv2
 
 A simple plugin that force the download of images or pictures such as jpeg,png etc.
 
 == Description ==
-= New Feature: =
+= New Features: =
 Now you can rename images when downloaded.There two ways to rename.
 
 = 1. Using Shortcode =
-`[wpfid new_name="new-name-of-file"]`
-= Note : = You have to specify name only **without extension** of image file.
+* `[wpfid new_name="new-name-of-file"]`
+* You can use variables also like this
+  * `[wpfid new_name="%post_id%"]` 
+  * `[wpfid new_name="%filename%_%rand%"]` , etc.
+= Note : = You have to specify name only **without file extension**.
+
+* If you have still any confusion__post your question, Thanks.
 
 = 2. Bulk Rename Images =
+Goto `settings >> Wp-Force Images Download` page and set your desired combination to rename images. e.g.`%filename%-%rand%`
 
-Goto settings >> **Wp-Force Images Download** page and set your desired value to rename images.
-
-* Default value: none
-* Available variables:
-* %site_name%: Replaced with the **Site Title**
-* %post_title%: Replaced with the current **Post Title**
-* %timestamp%: Replaced with the **current time** in **unix timestamp format**
-* %post_id%: Replaced with the current **Post ID**
-* Note:these variables are replaced with their corresponding values.You can use only one variable at a time.
-
-If you set new name in shortcode for individual images, the name in shortcode is preferred.
+* Default value:`none`
+* Note: These variables will be replaced with their corresponding values.You can use any  combination.e.g. `%site_name%_%filename%-%post_id%`.
+* This option will not rename original files. If you set new name in shortcode for individual images, the name in shortcode will be preferred.
+* `%site_name%:` Replaced with the site title. `Goto Settings >> General >> [Site Title]` to change this value.
+* `%post_title%:` Replaced with the current **post title**
+* `%timestamp%:` Replaced with the current time in **unix timestamp format**
+* `%post_id%:` Replaced with the current **post id**
+* `%rand%:` Replaced with the 5-digit random number between **0 to 100000 e.g. 82469**
+* `%md5%:` Replaced with the **md5 hash** of orginal filename
+* `%filename%:` Replaced with the **orginal filename**
 
 = Now you can set your own custom download link in shortcode. = e.g.
 `[wpfid link="http://link-to/your/image.jpg"]`
@@ -87,7 +92,23 @@ You can Set Custom Color in three ways:
 == Screenshots ==
 1. Buttons in different colors
 
+2. New button styles
+
 == Changelog ==
+
+= 1.5 =
+* bulk rename
+  * added new variables `%rand%,%md5%,%filename%`
+  * now you can use more than one variables
+  * now you can use also these variables in shortcode .e.g `[wpfid new_name="%post_id%_%filename%"]`
+* button themeing and styles
+  * new button style with 8 different color schemes
+  * added option to show file size on download button
+  * added option to show file size on download-icon on button
+  * added option to easily customize appearence of button
+* security increased
+* performance increased i.e. code is shortend to increase speed
+* added more clear documentation on every function
 
 = 1.4 =
 * shortcode suppport to rename images individually

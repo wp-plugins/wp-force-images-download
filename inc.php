@@ -71,7 +71,31 @@ add_settings_section(
  'wp_force_images_download_desc',
  'wp-force-images-download'
  );
-
+add_settings_field(
+    'wpfid_icon',
+    'Display download icon on button',
+    'wpfid_icon_function',
+    'wp-force-images-download',
+    'wp_force_images_download_fields_group'
+ );add_settings_field(
+    'wpfid_size',
+    'Display filesize on button',
+    'wpfid_size_function',
+    'wp-force-images-download',
+    'wp_force_images_download_fields_group'
+ );add_settings_field(
+    'wpfid_button_styles',
+    'Choose Button Style',
+    'wpfid_button_styles_callback',
+    'wp-force-images-download',
+    'wp_force_images_download_fields_group'
+ );add_settings_field(
+    'wpfid_css',
+    'Custom CSS code for button',
+    'wpfid_custom_css_callback',
+    'wp-force-images-download',
+    'wp_force_images_download_fields_group'
+ );
 add_settings_field(
  'wp_force_images_download_single',
  'Bulk Rename Images:', 
@@ -101,26 +125,71 @@ function wp_force_images_download_field_single() {
  $wpfidsingle = esc_textarea($wpfidsingle); //sanitise output
 ?>
  <input id="wpfid_single" name="wp_force_images_download_options[wpfid_single]" class="large-text code"
- value="<?php echo $wpfidsingle;?>"/>Default value: <i>none</i><br/>
- Available values <ul><li>%site_name%:  Replaced with the Site Title</li><li>%post_title%:  Replaced with the current post title</li><li>%timestamp%: Replaced with the current time in unix timestamp format</li><li>%post_id%: Replaced with the current post id</li></ul><b>Note:</b> These variables are replaced with their corresponding values.You can use only one variable at a time.
-<br/>If you set new name in shortcode for individual images, the name in shortcode is preferred.
+ value="<?php echo $wpfidsingle;?>"/>
+Default value: <code>none</code><br/>
+
+ <p><b style="color:maroon;font-weight:800;">Note:</b> These variables are replaced with their corresponding values.You can use any combination.e.g.<code>%site_name%_%filename%-%post_id%</code>
+This option will not rename original files. </p>
+ <ul style="font-size:13px;">
+ <li><code>%site_name%</code>:  Replaced with the <i>site title</i>. Goto <code>Settings >> General >> [Site Title]</code> to change this value.</li>
+ <li><code>%post_title%</code>:  Replaced with the current <i>post title</i></li>
+ <li><code>%timestamp%</code>: Replaced with the current time in <i>unix timestamp format</i> e.g. current time in unix timestamp format is <code><?php echo current_time('timestamp'); ?></code></li>
+ <li><code>%post_id%</code>: Replaced with the current <i>post id</i></li>
+ <li><code>%rand%</code>: Replaced with the 5-digit <i>random</i> number between <i>0 to 100000</i> e.g. <code><?php echo mt_rand(0,100000); ?></code></li>
+ <li><code>%md5%</code>: Replaced with the <i>md5 hash</i> of orginal filename</li>
+ <li><code>%filename%</code>: Replaced with the orginal filename</li>
+ </ul>
+ 
+
 
 <?php
 }
+/* CSS */
+function wpfid_custom_css_callback() {
+ $options = get_option('wp_force_images_download_options');
+ $wpfidcustomcss = (isset($options['wpfid_custom_css'])) ? $options['wpfid_custom_css'] : '';
+ #$wpfidcustomcss = esc_textarea($wpfidcustomcss); //sanitise output
+?>
+<textarea  id="wpfid_custom_css" name="wp_force_images_download_options[wpfid_custom_css]"
+ placeholder="Custom CSS Code" cols="45" rows="5"><?php echo $wpfidcustomcss;?></textarea><br/>
+    <label for="wpfid_custom_css">Add custom css code to customize look of download button</label><br/>
+<?php
+}
 
+//Check Box
+function  wpfid_size_function(){
+	$options = get_option('wp_force_images_download_options');
+	#$size_check_box = (isset($options['size_check_box'])) ? $options['size_check_box'] : '';
+     ?>
+   <input type="checkbox" id="size_check_box" name="wp_force_images_download_options[size_check_box]" 
+   value="1" <?php echo checked( 1, $options['size_check_box'], false ) ?>/>
+   <label for="size_check_box">Check this box to show filesize of image on download button.</label><br/>
+   
+<?php
+}
+
+//Check Box 2
+function  wpfid_icon_function(){
+	$options = get_option('wp_force_images_download_options');?>
+   <input type="checkbox" id="icon_check_box" name="wp_force_images_download_options[icon_check_box]" 
+   value="1" <?php echo checked( 1, $options['icon_check_box'], false ) ?>/>
+   <label for="icon_check_box">Check this box to show download-icon on button.</label><br/>
+     
+<?php }
+//Button Styles
+function  wpfid_button_styles_callback(){
+	$options = get_option('wp_force_images_download_options');?>
+   <input type="radio" id="button_style_1" name="wp_force_images_download_options[button_styles]" 
+   value="1" <?php echo checked( 1, $options['button_styles'], false ) ?>/>
+   <label for="button_style_1">Show Only Text</label><br/><br/>
+   <input type="radio" id="button_style_2" name="wp_force_images_download_options[button_styles]" 
+   value="2" <?php echo checked( 2, $options['button_styles'], false ) ?>/>
+   <label for="button_style_2">Original Style</label><img width="10%" align="right"src="<?php echo plugins_url('img/orig.png',__FILE__)?>"/><br/><br/>
+   <input type="radio" id="button_style_3" name="wp_force_images_download_options[button_styles]" 
+   value="3" <?php echo checked( 3, $options['button_styles'], false ) ?>/>
+   <label for="button_style_3">New style. click to see more <a title="More Examples" href="https://wordpress.org/plugins/wp-force-images-download/screenshots/">examples</a></label><img width="40%" align="right"src="<?php echo plugins_url('img/new_style.png',__FILE__)?>"/><br/><br/>This button style has only 8 colour schemes i.e <code>green, red, blue, orange, pink, gray, darkblue, purple</code>. You can use one of them in shortcode .e.g <code>[wpfid color="green"]</code>. Default color is <code>gray</code>
+<?php }
 function wpfid_values(){
-		function check1($input){
-	if(!isset($input) or $input == ""){
-		
-		//return $author_name = the_author();
-		//wp 3.1 fix
-		$current_user = wp_get_current_user();
-		echo $current_user = $current_user->display_name;
-	}else {
-		
-		echo $author_name = $input;
-	}}
-	
 	$wpfid_options = get_option( 'wp_force_images_download_options');
 	$single_author = trim($wpfid_options['wpfid_single']);
 	$singular_author = trim($wpfid_options['wpfid_singular']);
@@ -138,7 +207,7 @@ if ( current_user_can( 'install_plugins' ) )
 		//Check that the user hasn't already clicked to ignore the message 
      if ( ! get_user_meta($user_id, 'wpfid_ignore_notice') ) {
         echo '<div class="updated"><p>';
-        printf(__('Go to settings page to configure the <b><a href="options-general.php?page=wp-force-images-download">WP-Force Images Download</a>, Thanks</b> | <a href="%1$s">[Hide Notice]</a>'), '?wpfid_nag_ignore=0');
+        printf(__('Go to settings page to configure the <b><a href="options-general.php?page=wp-force-images-download">WP-Force Images Download</a>, Thanks</b> | <a href="%1$s">[Hide Notice]</a>'), 'options-general.php?page=wp-force-images-download&wpfid_nag_ignore=0');
         echo "</p></div>";
      }
     }
@@ -154,3 +223,6 @@ function wpfid_nag_ignore() {
              add_user_meta($user_id, 'wpfid_ignore_notice', 'true', true);
      }
 }
+
+
+?>
